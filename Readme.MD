@@ -2,7 +2,7 @@
 
 Current status/notes:
 - Still being casually developed in free time.
-- Converted to mobile first from where I had tried the opposite.
+- Converted to mobile first code from where I had tried the opposite.
 - Cleaned up the Sass and tried reorganizing it based on SMACSS.
 - Graphic theme works well on mobile now.
 - Google form was retooled/Form now works with Google spreadsheet. Technique works and is linked to one of my accounts for testing.
