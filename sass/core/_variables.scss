@@ -1,0 +1,19 @@
+// Common, standard color names cross-browser.
+$gray: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$dimgray: hsl(0, 0%, 41%);
+
+// Names based on http://chir.ag/projects/name-that-color/
+$heathbar: hsl(21, 71%, 25%);
+$dreamcicle: hsl(29, 100%, 65%);
+$cod-gray: hsl(0, 0%, 8%);
+$dusty-gray: hsl(0, 0%, 61%);
+$boulder: hsl(0, 0%, 47%);
+$mercury: hsl(0, 0%, 90%);
+$neon-carrot: hsl(29, 100%, 60%);
+$mine-shaft: hsla(0, 1%, 15%, 0.92);
+$silver-chalice: hsl(0, 0%, 64%);
+
+// Trying this to get the best of both worlds. Got the idea from Android app.
+$jumbotron-min768-bg: $mine-shaft;

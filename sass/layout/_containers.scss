@@ -1,0 +1,25 @@
+.container {
+    max-width: 730px;
+    padding: 0;
+    // I'd rather put this with jumbotron file, but
+    // this is to override Bootstrap.
+    .jumbotron {
+        border-radius: 0;
+    }
+}
+
+.container-fluid {
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+// Adds and positions the large wood band.
+// Wraps around the header and the jumbotron for flexibility.
+.bg-area {
+    background-image: url(../img/bbq-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @media (max-width: 767px) {
+        background-image: none;
+    }
+}

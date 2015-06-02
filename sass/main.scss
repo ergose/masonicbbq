@@ -1,0 +1,24 @@
+// Pull in variables, then functions, then mixins first.
+@import 'core/variables'; // Later, this should be split up into this and a separate color file.
+@import 'core/functions';
+@import 'core/mixins';
+// Base HTML elements
+@import 'core/base_elements';
+
+// Layout Components
+@import 'layout/containers';
+@import 'layout/donation_info';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/marketing';
+
+// Page Modules
+@import 'modules/buttons';
+@import 'modules/jumbotron';
+@import 'modules/navbar';
+@import 'modules/forms';
+@import 'modules/orderform';
+
+// State CSS
+@import 'state/nav_animations';

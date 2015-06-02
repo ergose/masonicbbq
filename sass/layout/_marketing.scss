@@ -1,0 +1,33 @@
+.marketing {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    @media (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Default bottom margin was at 10px. Leave the longest default. (In/De)crease added value as needed when adjusting content text.
+// TODO: Find longest content and calculate height. Use that to calculate added value automatically. May use jQuery.
+$spacer: 10px;
+.site1-content {}
+
+.site2-content {
+    @media (min-width: 992px) {
+        margin-bottom: $spacer + 20;
+    }
+}
+
+.site3-content {
+    @media (min-width: 992px) {
+        margin-bottom: $spacer + 20;
+    }
+}
+
+.site1-content, .site2-content {
+    @media (min-width: 768px) {
+        padding-right: 10px;
+    }
+}

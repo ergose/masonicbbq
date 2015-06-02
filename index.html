@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Based on Bootstrap -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Playball' rel='stylesheet' type='text/css'>
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/jumbotron-narrow.css" rel="stylesheet"> -->
+    <!-- Use my main.css. Minified at deploy with Grunt. -->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class='bg-area'>
+        <div class="container top">
+          <div class="header clearfix">
+
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Masonic BBQ</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse no-transition" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right nav-pills">
+                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="form_contact.html">Contact</a></li>
+                    <li><a href="form_order.html">Order</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+          </div>
+
+          <div class="jumbotron main">
+            <!-- Heading will be injected here if larger than cell. -->
+            <p class="lead">The pickup will be on Saturday, April 25th at 3 different locations. This is some of the best Hickory Smoked BBQ around!</p>
+            <p><a class="btn btn-lg btn-success" href="form_order.html" role="button">Place an Order</a></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="container marketing">
+       <!-- TODO: Add jQuery code to pulldown the pills in columns.
+            http://stackoverflow.com/questions/13841387/how-do-i-bottom-align-grid-elements-in-bootstrap-fluid-layout -->
+      <div class="row">
+      <div class="row">
+         <div class="col-md-4">
+          <h2>Country Club</h2>
+          <p class='site1-content'>The pickup location for the Country Club/West Winston-Salem area will be at the New Philadelphia Moravian Church parking lot, located at 4440 Country Club Rd, Winston-Salem, NC 27104.</p>
+          <p><a class="btn btn-primary" href="form_order.html?pickup=salem" role="button">Pickup at this Location &raquo;</a></p>
+            <p>
+               Contact: <a href='form_contact.html?contact=george'>George Troxler</a><br>
+               Website: <a href='http://ncmason.net/salem289'>Salem Lodge #289</a>
+            </p>
+
+         </div>
+        <div class="col-md-4">
+          <h2>Kernersville</h2>
+          <p class='site2-content'>The pickup location for the Kernersville area will be at Kernersville Lodge No.669, located at 701 South Main Street, Kernersville, NC 27284.</p>
+          <p><a class="btn btn-primary" href="form_order.html?pickup=kernersville" role="button">Pickup at this Location &raquo;</a></p>
+            <p>
+               Contact: <a href='form_contact.html?contact=chad'>Chad Delp</a><br>
+               Website: <a href='http://www.kernersvillemason.com'>Kernersville Lodge #669</a>
+            </p>
+
+         </div>
+
+         <div class="col-md-4">
+          <h2>Downtown Winston</h2>
+          <p class="site3-content">The pickup location for Downtown/East Winston-Salem area will be at Bivouac Lodge #503, located at 1025 14th St NE Winston-Salem, NC 27105.</p>
+          <p><a class="btn btn-primary" href="form_order.html?pickup=bivouac" role="button">Pickup at this Location &raquo;</a></p>
+            <p>
+               Contact: <a href='form_contact.html?contact=rodney'>Rodney Funderburk</a><br>
+               Website: <a href='http://bivouaclodge503.wix.com/bivouac-lodge-503-ph'>Bivouac Lodge #503</a>
+            </p>
+        </div>
+
+          </div>
+      </div>
+
+         <div class="row info">
+            <div class="col-xs-12 col-sm-6">
+               <h3>Salem &amp; Kernersville Lodges</h3>
+               <p>All proceeds to Salem and Kernersville Lodges will be evenly divided between the <a href="http://mhc-oxford.org/">Masonic Home for Children at Oxford, Inc.</a>
+               and the <a href="http://www.liveatwhitestone.org/gallery/">NC Masonic and Eastern Star Home Foundation, LLC.</a></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+               <h3>Bivouac Lodge</h3>
+               <p>Proceeds to Bivouac Lodge will benefit the <a href='http://cch-nc.org/index.html'>Central Children's Home in Oxford, NC</a></p>
+            </div>
+         </div>
+    </div>
+
+      <footer class="footer">
+        <p>&copy; Brian Chandler 2014</p>
+      </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug. Above may not be needed on simple pages. Below has so far always been there. -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Trying technique for preventing redirect on form submission. -->
+    <!-- Hotlinking jQuery Validator -->
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/additional-methods.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

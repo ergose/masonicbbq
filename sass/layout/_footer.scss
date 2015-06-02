@@ -1,0 +1,22 @@
+.footer {
+    margin-top: 10px;
+    padding-top: 19px;
+    color: $boulder;
+    border-top: 1px solid $dusty-gray;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.footer-contactform {
+    margin-top: 0;
+}
+
+.footer-orderform {
+    margin-top: 5px;
+
+    @media (min-width: 768px) {
+        margin-top: 0;
+        border-top: 0;
+    }
+}
+

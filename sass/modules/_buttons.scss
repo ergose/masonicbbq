@@ -1,0 +1,22 @@
+// Using as main button in the jumbotron.
+.btn-success {
+    background-color: $dreamcicle;
+    border-color: $neon-carrot;
+    color: $black;
+    &:hover {
+        background-color: $dreamcicle;
+        border-color: hsl(29, 100%, 60%);
+    }
+}
+
+// Using as secondary buttons like in marketing section
+// of the main page.
+.btn-primary {
+    background-color: rgb(108, 49, 18);
+    border-color: hsl(21, 71%, 20%);
+    &:hover {
+        background-color: $dreamcicle;
+        border-color: hsl(29, 100%, 60%);
+        color: $black;
+    }
+}

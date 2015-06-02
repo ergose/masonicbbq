@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- Based on Bootstrap -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="favicon.ico">
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans|Playball' rel='stylesheet' type='text/css'>
+
+
+        <title>Narrow Jumbotron Template for Bootstrap</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <!-- <link href="css/jumbotron-narrow.css" rel="stylesheet"> -->
+        <!-- Use my main.css. Minified at deploy with Grunt. -->
+        <link href="css/main.css" rel="stylesheet">
+
+        <!-- This goes with redirect technique -->
+        <script type="text/javascript">var orderSubmitted=false;</script>
+    </head>
+
+    <body>
+
+    <div class='bg-area'>
+        <div class="container top">
+          <div class="header clearfix">
+
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Masonic BBQ</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse no-transition" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right nav-pills">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form_contact.html">Contact</a></li>
+                    <li class="active"><a href="form_order.html">Order<span class="sr-only">(current)</span></a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+          </div>
+
+            <!-- TODO: Change the entry.numbers to the test form when linking. -->
+            <!-- TODO: Add JavaScript to catch the query string and pre-select radio by ID. No way to pre-select without javascript. -->
+            <!-- Unfortunately divs must wrap each element for Bootstrap styling. You can't put class='radio' on the label tag. -->
+        <div class="jumbotron orderform">
+
+            <form role="form" class="form-horizontal" action="https://docs.google.com/forms/d/1DaBHUAgbyFHMzmnuFljClD8-AxDBefyyUhpmSB8EoA8/formResponse" method="POST" id='orderForm' target='hidden_iframe' onsubmit="orderSubmitted=true;">
+
+                <fieldset>
+                    <legend>Pickup Location</legend><!-- TODO: Make more visual with jQuery if time allows -->
+
+                    <div class='form-group'><!-- If doesn't validate, add .has-warning -->
+                        <div class='controls text-center'>
+                            <label for='pickup-country-club' class="radio-inline control-label">
+                                <input type='radio' id='pickup-country-club' name='entry.2117752079' value='Salem Lodge in New Philadelphia Moravian Church Parking Lot'>New Philidelphia Moravian Church</label>
+                            <label for='pickup-kernersville' class="radio-inline control-label">
+                                <input type='radio' id='pickup-kernersville' name='entry.2117752079' value='Kernersville Lodge'>Kernersville Lodge</label>
+                            <label for='pickup-east-winston' class="radio-inline control-label">
+                                <input type='radio' id='pickup-east-winston' name='entry.2117752079' value='Bivouac Lodge # 503'>Bivouac Lodge</label>
+
+                            <span id='pickup-error' class="help-block" role="alert"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>You wish the following lodge to recieve credit:</legend>
+
+                    <div class="form-group"><!-- If doesn't validate, add .has-warning -->
+                        <div class='controls text-center'>
+                            <label for='salem-lodge' class="radio-inline control-label">
+                                <input type='radio' id='salem-lodge' class='' name='entry.742187028' value='Salem Lodge'>Salem Lodge</label>
+                            <label for='kernersville-lodge' class="radio-inline control-label">
+                                <input type='radio' id='kernersville-lodge' class='' name='entry.742187028' value='Kernersville Lodge'>Kernersville Lodge</label>
+                            <label for='bivouac-lodge' class="radio-inline control-label">
+                                <input type='radio' id='bivouac-lodge' class='' name='entry.742187028' value='Bivouac Lodge # 503'>Bivouac Lodge</label>
+
+                            <span id='lodge-credit-error' class="help-block" role="alert"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Skip frontside validation -->
+                <fieldset>
+                    <legend>How did you learn of our smoked butt sale?</legend>
+
+                    <div class="form-group">
+                        <select id='heardabout' name='entry.1276265733'>
+                            <option value="" disabled selected>Please select an option...</option>
+                            <option value="Big Boy BBQ newsletter">Big Boy BBQ Newsletter</option>
+                            <option value="Bivouac Lodge Newsletter">Bivouac Lodge Newsletter</option>
+                            <option value="Kernersville Lodge Newsletter">Kernersville Lodge Newsletter</option>
+                            <option value="Salem Lodge Newsletter">Salem Lodge Newsletter</option>
+                            <option value="26th Masonic Distric e-mail list">26th Masonic District Email List</option>
+                            <option value="Forward from a friend">From a friend</option> <!-- BUG: Did not submit correctly. Check this and main.js -->
+                            <option value="__other_option__">-Other-</option>
+                        </select>&nbsp;
+                        <!-- TODO: Show if -Other- is selected -->
+                        <!-- Show if -Other- is selected. -->
+                        <input type="hidden" name="entry.1276265733.other_option_response" id="entry_1276265733_other_option_response" dir="auto">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Information</legend>
+
+                    <div class="form-group"><!-- If doesn't validate, add .has-warning -->
+                        <label for='name' class="col-md-3 control-label">Full Name</label>
+                        <div class="col-md-9 controls">
+                            <input type='text' id='name' class='form-control' name='entry.667369012'>
+                            <span id='name-error' class="help-block" role="alert"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for='email' class="col-md-3 control-label">Email Address</label>
+                        <div class='col-md-9 controls'>
+                            <input type='email' id='email' class='form-control' name='entry.1344254577'>
+                            <span id='email-error' class="help-block" role="alert"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for='phone' class='col-md-3 control-label'>Phone Number</label>
+                        <div class="col-md-9 controls">
+                            <input type='tel' id='phone' class='form-control' name='entry.205827085'>
+                            <span id="phone-error" class="help-block" role="alert"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for='amount' class="col-md-3 control-label"># Boston Butts</label>
+                        <div class="col-md-9 controls">
+                            <input type='number' id='amount' name="entry.2067829795" role="spinbutton" min="1" max="10">
+                            <span id="amount-error" class="help-block" role="alert"></span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class='text-center'>
+                    <button type="submit" name='orderSubmit' value="Submit" id='orderSubmit' class="btn btn-lg btn-success">Place Order</button>
+                </div>
+
+            </form>
+
+            <div class="hidden-message" style="display: none;">
+                Order has been placed.
+            </div>
+
+            </div>
+        </div>
+
+
+        </div>
+
+        <footer class="footer footer-orderform">
+            <p>&copy; Brian Chandler 2014</p>
+        </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug. Above may not be needed on simple pages. Below has so far always been there. -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Trying technique for preventing redirect on form submission. -->
+    <!-- Hotlinking jQuery Validator -->
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/additional-methods.min.js"></script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(orderSubmitted) {}"></iframe>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
